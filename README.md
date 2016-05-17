@@ -9,10 +9,11 @@ reduce the probability of an SQL injection with minimal amount of changes to the
 SQL Injection is possible because of the user inputs. My solution analyzes the input
 and checks it for any malicious strings. It modifies these strings from the SQL query.
 The user input can come in many forms:
-● POST and GET parameters
-● HTTP headers
-● Request Payload
-● File Uploads
+* POST and GET parameters
+* HTTP headers
+* Request Payload
+* File Uploads
+
 My solution uses the sql escape string function on each of these. If the escaped string is
 different from the real string, it might be an SQL injection string. To check this is true, the
 security layer looks for the request data as substrings of the SQL query. If there’s a match, the
