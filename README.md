@@ -23,7 +23,7 @@ prevention uses an SQL injection string already stored inside the database. Sinc
 queries have to pass through our security layer, it maintains a list of all the fields that are read
 from the database. The strategy used of request inputs can be reused for these field. This
 means that all sql fields are matched for being used as substrings in a subsequent query. If
-that’s true, the field is escaped using mysqli’s build in sql escape string function.
+that’s true, the field is escaped using mysqli’s built in sql escape string function.
 
 ## How to use the security layer
 The security layer consists of database configuration variables and a
